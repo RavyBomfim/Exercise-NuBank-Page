@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #fff;
+    --default-page-color: #711ea8;
+    --dark-page-color: #5e2d81;
+    --default-font-color: #000;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--default-font-color);
+    max-width: 1100px;
+    margin: auto;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--default-page-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font-weight: 500;
+}
+
+header #logo img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav .menu a:hover {
+    color: var(--dark-page-color);
+}
+
+nav #button-menu {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid var(--default-page-color);
+    border-radius: 10px;
+}
+
+nav #button-menu:hover {
+    background-color: var(--default-page-color);
+    color: #fff;
+    border: 2px solid var(--dark-page-color);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.container h1 {
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+
+.container h1 span, .container p span {
+    color: var(--default-page-color);
+}
+
+.open-account {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 20px;
+    
+}
+
+.open-account input {
+    width: 480px;
+    border: 1px solid var(--default-page-color);
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 16px;
+    outline: 0;
+}
+
+.open-account #button {
+    display: inline-block;
+    width: 350px;
+    height: 42px;
+    background-color: var(--default-page-color);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out ;
+}
+
+.open-account #button:hover {
+    box-shadow: 8px 5px 3px #000;
+}
+
+footer {
+    width: 50%;
+    padding-right: 50px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
